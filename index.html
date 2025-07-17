@@ -2,87 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Krishnanunni S | VLSI Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
       line-height: 1.6;
+      background: #f4f4f4;
     }
     header {
-      background-color: #004080;
+      background: #1f2937;
       color: #fff;
-      padding: 2rem;
+      padding: 1.5rem 0;
       text-align: center;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.2rem;
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+    section {
       padding: 2rem;
+      background: #fff;
+      margin: 1rem auto;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    h1, h2, h3 {
-      color: #004080;
+    h2 {
+      color: #1f2937;
+      margin-bottom: 1rem;
     }
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-    .contact a {
-      display: block;
-      margin-bottom: 0.5rem;
+    ul {
+      padding-left: 1.2rem;
     }
     footer {
-      background-color: #eee;
       text-align: center;
       padding: 1rem;
+      background: #1f2937;
+      color: white;
       font-size: 0.9rem;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .intern ul {
+      list-style: square;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Krishnanunni S</h1>
-    <p>B.Tech Student in VLSI Design | RTL Design & Verification Enthusiast</p>
-  </header>
 
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m Krishnanunni S, a B.Tech student specializing in VLSI Design & Technology at SRM Institute of Science and Technology, Kattankulathur. I’m passionate about front-end chip design — with a strong focus on RTL development, digital logic, finite state machines, and protocol-based system design.
-      </p>
-      <p>
-        My current work includes RTL coding in Verilog and hands-on experience with ModelSim and Quartus Prime, particularly on AMBA-based communication protocols like AHB and APB. I’ve successfully implemented projects like an APB to AHB Bridge and continue to explore real-world applications of FSMs and SoC-level modules.
-      </p>
-      <p>
-        Beyond academics, I’m actively preparing for internship roles in leading research organizations like DRDO and in semiconductor companies, aiming to contribute in RTL design, DFT, or verification domains. I’m constantly learning, building, and staying updated with the evolving VLSI landscape.
-      </p>
-    </section>
+<header>
+  <h1>Krishnanunni S</h1>
+  <p>B.Tech Student in VLSI Design | RTL Design & Verification Enthusiast</p>
+  <p>SRM Institute of Science and Technology, Kattankulathur</p>
+</header>
 
-    <section>
-      <h2>Projects</h2>
-      <h3>APB to AHB Bridge</h3>
-      <p>
-        Designed a bridge module to enable communication between APB and AHB interfaces using Verilog.
-        Implemented the logic based on AMBA 3 protocol specifications and tested using ModelSim.
-      </p>
-      <p><strong>GitHub Repository:</strong> (Coming Soon)</p>
-    </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a passionate VLSI engineering student with hands-on experience in front-end design. Currently focused on RTL coding with Verilog and simulation tools like ModelSim and Quartus Prime. I’ve built mini-projects including an APB to AHB Bridge and 8-bit ALU, and I’m expanding my understanding of AMBA protocols. Certified in Python through Meta’s course on Coursera. Actively building a portfolio to showcase practical VLSI projects.
+  </p>
+</section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <a href="mailto:krishnanunnisunil27@gmail.com">📧 krishnanunnisunil27@gmail.com</a>
-      <a href="mailto:ks8719@srmist.edu.in">🏫 ks8719@srmist.edu.in</a>
-      <a href="https://www.linkedin.com/in/krishnanunni-sunil-4a339326a" target="_blank">🔗 LinkedIn Profile</a>
-    </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>APB to AHB Bridge (AMBA Protocol)</strong> – Developed a bridge module in Verilog implementing communication between APB and AHB systems.</li>
+    <li><strong>4-bit / 8-bit ALU</strong> – Performs arithmetic and logic operations (AND, OR, ADD, SUB, XOR, etc.)</li>
+    <li><strong>3-to-8 Decoder</strong> – Implemented using logic gates in Verilog.</li>
+    <li><strong>4:1 Multiplexer</strong> – Designed and simulated using Verilog.</li>
+  </ul>
+</section>
+
+<section id="internship">
+  <h2>Internship</h2>
+  <div class="intern">
+    <h3>Maven Silicon – VLSI Design Internship</h3>
+    <p>
+      Completed a 45-day intensive internship focused on front-end VLSI design. Gained practical experience in RTL coding using Verilog, functional simulation, and FSM-based design. The internship also involved using industry-standard tools such as ModelSim and GTKWave.
+    </p>
+    <ul>
+      <li><strong>Duration:</strong> 45 days (June – July 2025)</li>
+      <li><strong>Tools Used:</strong> Verilog, ModelSim, GTKWave</li>
+      <li><strong>Topics Covered:</strong> RTL Design, FSM Implementation, Testbench Writing, Timing Simulation</li>
+    </ul>
   </div>
+</section>
 
-  <footer>
-    &copy; 2025 Krishnanunni S. All rights reserved.
-  </footer>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:krishnanunnisunil27@gmail.com">krishnanunnisunil27@gmail.com</a></p>
+  <p>College Mail: <a href="mailto:ks8719@srmist.edu.in">ks8719@srmist.edu.in</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/krishnanunni-sunil-4a339326a" target="_blank">linkedin.com/in/krishnanunni-sunil</a></p>
+  <p>GitHub: <a href="https://github.com/krishnanunni-tech" target="_blank">github.com/krishnanunni-tech</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Krishnanunni S | Built with 💻 using GitHub Pages
+</footer>
+
 </body>
 </html>
